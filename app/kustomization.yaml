@@ -6,7 +6,7 @@ resources:
 - cm.yaml
 - service.yaml
 - deploy.yaml
-- ingress.yaml
+- route.yaml
 
 commonAnnotations:
   sample-go/version: v1

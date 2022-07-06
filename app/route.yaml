@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: sample-go
+    app.kubernetes.io/instance: app-cm-example
+  name: sample-go
+spec:
+  host: sample-go-cm-example.apps.ocpdev.konsalt.info
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: sample-go
+    weight: 100
+  wildcardPolicy: None
