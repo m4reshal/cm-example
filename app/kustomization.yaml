@@ -9,4 +9,4 @@ resources:
 - route.yaml
 
 commonAnnotations:
-  sample-go/version: v1
+  sample-go/version: v2

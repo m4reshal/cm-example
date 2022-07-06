@@ -6,4 +6,4 @@ data:
   test.conf: |
     title = "Example Config"
     enableAwesome = "true"
-    version = "v1"
+    version = "v2"
