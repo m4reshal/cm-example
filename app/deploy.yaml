@@ -5,7 +5,6 @@ metadata:
   labels:
     app: sample-go
   name: sample-go
-  namespace: myns
 spec:
   replicas: 1
   selector:

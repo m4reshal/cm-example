@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp
-  namespace: argocd
+  name: app-cm-example
+  namespace: openshift-gitops
 spec:
   destination:
-    namespace: myns
+    namespace: cm-example
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: app/
-    repoURL: https://github.com/christianh814/cm-example
+    path: ./app
+    repoURL: https://github.com/m4reshal/cm-example
     targetRevision: main
   syncPolicy:
     automated:

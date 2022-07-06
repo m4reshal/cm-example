@@ -6,7 +6,6 @@ metadata:
     app: sample-go
     app.kubernetes.io/instance: myapp
   name: sample-go
-  namespace: myns
 spec:
   ports:
   - port: 8080

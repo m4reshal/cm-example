@@ -8,7 +8,6 @@ metadata:
   labels:
     app: sample-go
   name: sample-go-ingress
-  namespace: myns
 spec:
   rules:
   - host: sample-go.127.0.0.1.nip.io
