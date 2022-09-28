@@ -21,6 +21,7 @@ spec:
       - image: quay.io/christianh814/simple-go:latest
         name: sample-go
         volumeMounts:
+        - forceerrorforargodebug
         - name: config-vol
           mountPath: /etc/myapp
         env:
